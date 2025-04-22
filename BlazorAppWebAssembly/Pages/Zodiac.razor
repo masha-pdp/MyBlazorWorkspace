@@ -1,0 +1,29 @@
+@page "/zodiac"
+
+<PageTitle>Zodiac</PageTitle>
+
+<h1>Zodiac</h1>
+
+<p>&lg;</p>
+<p role="status"> @zodiacSigns[index] @((MarkupString)codeHtml) </p>
+
+<button class="btn btn-primary" @onclick="IncrementZodiac">Click me</button>
+
+@code {
+    string[] zodiacSigns =
+    {
+        "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+        "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
+    };
+
+    private int index = 0;
+
+    private string codeHtml => $"&#{9800 + index};";
+
+    private void IncrementZodiac()
+    {
+        index = (index + 1) % zodiacSigns.Length;
+    }
+}
+
+

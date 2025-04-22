@@ -1,0 +1,28 @@
+@page "/Users"
+@using BlazorApp1.Data
+@using Microsoft.AspNetCore.Components.QuickGrid
+
+
+<h3>Users</h3>
+
+<QuickGrid Items="users.AsQueryable()" Class="table table-striped">
+    <PropertyColumn Property="u => u.name" Title="Имя" Sortable="true" />
+</QuickGrid>
+
+
+
+@code {
+    //  переменные и свойства странички
+    
+    //  [Inject] - это зависимости из DI-контейнера
+    [Inject] ApplicationContext db { get; set; }
+
+    List<User> users;
+
+    protected override void OnInitialized()
+    {
+        //  провести инциализаицю полей можно тут
+        users = db.users.ToList();  //.Select(u => u).ToList();
+    }
+    
+}

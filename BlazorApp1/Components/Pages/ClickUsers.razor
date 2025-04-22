@@ -1,0 +1,47 @@
+@page "/click_users"
+@using BlazorApp1.Data
+@using Microsoft.EntityFrameworkCore
+@rendermode InteractiveServer
+
+<PageTitle>All users by click</PageTitle>
+
+<h1>User @currentCount </h1>
+
+<p role="status">
+    @if (users == null)
+    {
+        <em>Загрузка...</em>
+    }
+    else
+    {
+        @users[currentCount].name
+    }
+</p>
+
+<button class="btn btn-primary" @onclick="NextUser">Click me</button>
+
+@code {
+    private int currentCount = 0;
+    [Inject] ApplicationContext db { get; set; }
+
+    List<User> users;
+    
+    
+    protected override async Task OnInitializedAsync()
+    {
+        users = await db.users.ToListAsync();
+    }
+
+    private void NextUser()
+    {
+        if (users == null || users.Count == 0)
+            return;
+        currentCount++;
+        if (currentCount >= users.Count)
+        {
+            currentCount = 0;
+        }
+        
+    }
+    
+}

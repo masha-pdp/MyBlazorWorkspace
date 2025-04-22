@@ -1,0 +1,49 @@
+@page "/users"
+@using BlazorAppWebAssembly.Features.Users.DTO
+
+<h3>Users</h3>
+
+@if (error != null)
+{
+    <p style="color: red;">Ошибка: @error</p>
+}
+else if (users == null)
+{
+    <p>Загрузка...</p>
+}
+else
+{
+    <ul>
+        @foreach (var user in users)
+        {
+            <li>
+                <a href="@($"/usercomments/{user.id}")">@user.name</a>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    [Inject] HttpClient _httpClient { get; set; }
+
+    private List<UserDto>? users;
+    private string? error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await _httpClient.GetFromJsonAsync<List<UserDto>>("api/Users");
+        
+        // try
+        // {
+        //     users = await _httpClient.GetFromJsonAsync<List<User>>("api/Users");
+        // }
+        // catch (Exception ex)
+        // {
+        //     error = ex.Message;
+        //     Console.WriteLine("⚠ Ошибка при получении пользователей: " + ex);
+        // }
+    }
+
+   
+}
+
