@@ -24,4 +24,12 @@
     <ProjectReference Include="..\BlazorAppWebAssembly\BlazorAppWebAssembly.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+  <Content Remove="wwwroot/lib/bootstrap/**" />
+</ItemGroup>
+
+<ItemGroup>
+  <Content Remove="wwwroot/favicon.png" />
+</ItemGroup>
+
 </Project>
