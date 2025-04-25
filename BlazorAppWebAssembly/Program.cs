@@ -11,6 +11,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 //      Scoped      - keep 1 instnace inside scope (for ex., request to Action)
 //      Transient   - always new instance
 
+//  builder.HostEnvironment.BaseAddress
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://localhost:5062") });
 
 await builder.Build().RunAsync();

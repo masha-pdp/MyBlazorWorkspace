@@ -1,0 +1,24 @@
+@page "/usercomments/{userId:long}/add"
+
+<h3>AddComment</h3>
+
+<p>UserName here</p>
+
+<p>form to add new comment for this user:</p>
+
+<EditForm>
+    1. Blazor components: InputText, InputDate
+    
+    не использовать MediatR,
+    а отправлять данные через HttpClient
+    и валидировать их просто с помощью CommentDtoValidator.Validate(commentDto)
+    
+    2. Fluent Validation
+    3. post Dto to controller, apply validation, save data to DB
+</EditForm>
+
+@code {
+    [Parameter] public long userId { get; set; }
+    
+    
+}

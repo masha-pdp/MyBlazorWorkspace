@@ -14,7 +14,130 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b020cf10-268e-4011-a95b-2c6fefc59563" name="Changes" comment="" />
+    <list default="true" id="b020cf10-268e-4011-a95b-2c6fefc59563" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/Features/Comments/Component/AddComment.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyBlazorWorkspace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyBlazorWorkspace/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/BlazorApp1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/BlazorApp1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Components/Admin/Users.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Components/Admin/Users.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Components/Pages/ClickUsers.razor" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Components/Pages/ClickUsers.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Controllers/GetComments.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Data/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Data/ApplicationContextEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Data/Comment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Data/CommentEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Data/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Data/UserEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Features/Users/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Features/Users/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Migrations/20250411060946_InitialCreate.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Migrations/20250411060946_InitialCreate.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Migrations/ApplicationContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/bin/Debug/net9.0/BlazorApp1.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/BlazorApp1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/BlazorApp1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/BlazorApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/0ld9cxilw0-493y06b0oq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/37adgtcius-6cfz1n2cew.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/3zeemfu9tl-notf2xhcfb.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/4rhaqkfept-b7pk76d08c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/6ebo9pkv4m-c2oey78nd0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/6oxp0jmi7q-0j3bgjxly4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/6uwr1lrhsh-jd9uben2k1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/7j37oyi5ij-d7shbmvgxk.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/8n9nldalc6-06098lyss8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/a413awwuph-c2jlpeoesf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/at7xjpj9gt-dxx9fxp4il.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/ctg7dl1s7r-pk9g2wxc8p.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/ef1z40owrk-pj5nd1wqec.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/hbq4d3qinw-erw9l3u2r3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/hdfgvirz4s-fsbi9cje9m.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/jhesw8hzx7-cosvhxvwiu.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/job3ywuat9-v0zj4ognzu.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/krue8ll0om-hrwsygsryq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/kxqu1raqd7-y7v9cxd14o.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/lak9eq6uf2-h1s4sie4z3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/mzn848jz2f-vr1egmr9el.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/n6o7eave8d-63fj8s7r0e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/o4ql4nobfg-lcd1t2u6c8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/ouh3edm5j1-46ein0sx1k.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/qq4suq7mpa-j5mq2jizvt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/rjjfn46fww-ft3s53vfgj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/s7ytc2ojxm-aexeepp0ev.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/skb6k1bb5n-s35ty4nyc5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/sworogiqmv-jj8uyg4cgr.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/tcjg565vl2-ee0r1s7dh0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/tqkptlkdfv-nvvlpmu67g.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/ufrk2wvpar-r4e9w2rdcm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/ulacyztq1x-fvhpjtyr6v.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/v0hz2658p4-37tfw0ft22.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/v9exl6fbet-ausgxo2sd3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/vaxdz7b0x1-k8d9w2qqmf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/veh915wgoz-rzd6atqjts.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/vg2lnnyrpw-ub07r2b239.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/vrn14uixyy-khv3u5hwcm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/wlph242bm8-iovd86k7lj.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/xscm68l0ox-bqjiyaj88i.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/xvgt4pxslg-6pdc2jztkx.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/ypqhfc2jq7-tdbxkamptv.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/compressed/z1a2s78e24-kbrnm935zg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/ref/BlazorApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/ref/BlazorApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/refint/BlazorApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/refint/BlazorApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets/msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets/msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets/msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/Debug/net9.0/staticwebassets/msbuild.BlazorApp1.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorApp1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorApp1/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/BlazorAppWebAssembly.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/BlazorAppWebAssembly.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/Features/Users/DTO/UserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/Features/Users/DTO/UserDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/BlazorAppWebAssembly.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/BlazorAppWebAssembly.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/BlazorAppWebAssembly.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/BlazorAppWebAssembly.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/BlazorAppWebAssembly.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/BlazorAppWebAssembly.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/BlazorAppWebAssembly.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/BlazorAppWebAssembly.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.3en9n0u89k.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.3en9n0u89k.wasm.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.5xtqmfinmq.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.5xtqmfinmq.pdb.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/BlazorAppWebAssembly.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/BlazorAppWebAssembly.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/BlazorAppWebAssembly.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/blazor.boot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/12c6t64q4e-3en9n0u89k.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/3uujwyl8h0-5xtqmfinmq.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/yu3z5f2smg-fsd5yl4myo.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/ref/BlazorAppWebAssembly.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/ref/BlazorAppWebAssembly.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/refint/BlazorAppWebAssembly.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/refint/BlazorAppWebAssembly.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/tmp-webcil/BlazorAppWebAssembly.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/tmp-webcil/BlazorAppWebAssembly.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/webcil/BlazorAppWebAssembly.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/Debug/net9.0/webcil/BlazorAppWebAssembly.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorAppWebAssembly/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,22 +158,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.BlazorApp1.executor": "Run",
-    ".NET Launch Settings Profile.BlazorApp1: http.executor": "Debug",
-    ".NET Launch Settings Profile.BlazorAppWebAssembly: http.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.BlazorApp1.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.BlazorApp1: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.BlazorAppWebAssembly: http.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Compound.Run_BA1_BAWA">
     <configuration name="Run_BA1_BAWA" type="CompoundRunConfigurationType">
       <toRun name="BlazorApp1: http" type="LaunchSettings" />
@@ -224,7 +348,9 @@
       <workItem from="1744904694907" duration="1616000" />
       <workItem from="1744908723251" duration="2925000" />
       <workItem from="1744945117509" duration="24729000" />
-      <workItem from="1745291373664" duration="10118000" />
+      <workItem from="1745291373664" duration="12594000" />
+      <workItem from="1745390704904" duration="444000" />
+      <workItem from="1745391604880" duration="21892000" />
     </task>
     <servers />
   </component>

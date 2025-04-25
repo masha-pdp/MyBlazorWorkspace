@@ -12,7 +12,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 // Добавляем DbContext
-builder.Services.AddDbContext<ApplicationContext>();
+builder.Services.AddDbContext<ApplicationContextEntity>();
 builder.Services.AddControllers();//регистрация контроллера
 
 builder.Services.AddEndpointsApiExplorer();
@@ -34,7 +34,7 @@ var app = builder.Build();  //  DI container
 // Применяем миграции автоматически
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<ApplicationContext>();
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationContextEntity>();
     db.Database.Migrate();
 }
 

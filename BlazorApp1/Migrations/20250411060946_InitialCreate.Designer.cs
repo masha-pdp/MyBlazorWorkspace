@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace BlazorApp1.Migrations
 {
-    [DbContext(typeof(ApplicationContext))]
+    [DbContext(typeof(ApplicationContextEntity))]
     [Migration("20250411060946_InitialCreate")]
     partial class InitialCreate
     {

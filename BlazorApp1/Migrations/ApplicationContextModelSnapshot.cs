@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace BlazorApp1.Migrations
 {
-    [DbContext(typeof(ApplicationContext))]
+    [DbContext(typeof(ApplicationContextEntity))]
     partial class ApplicationContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -22,7 +22,7 @@ namespace BlazorApp1.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("BlazorApp1.Data.Comment", b =>
+            modelBuilder.Entity("BlazorApp1.Data.CommentEntity", b =>
                 {
                     b.Property<long>("id")
                         .ValueGeneratedOnAdd()
@@ -44,7 +44,7 @@ namespace BlazorApp1.Migrations
 
                     b.HasIndex("userid");
 
-                    b.ToTable("comments");
+                    b.ToTable("commentsEntity");
                 });
 
             modelBuilder.Entity("BlazorApp1.Data.OperationEntity", b =>
@@ -64,10 +64,10 @@ namespace BlazorApp1.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("OperationEntities");
+                    b.ToTable("OperationEntitiesEntity");
                 });
 
-            modelBuilder.Entity("BlazorApp1.Data.User", b =>
+            modelBuilder.Entity("BlazorApp1.Data.UserEntity", b =>
                 {
                     b.Property<long>("id")
                         .ValueGeneratedOnAdd()
@@ -83,12 +83,12 @@ namespace BlazorApp1.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("users");
+                    b.ToTable("usersEntity");
                 });
 
-            modelBuilder.Entity("BlazorApp1.Data.Comment", b =>
+            modelBuilder.Entity("BlazorApp1.Data.CommentEntity", b =>
                 {
-                    b.HasOne("BlazorApp1.Data.User", "User")
+                    b.HasOne("BlazorApp1.Data.UserEntity", "User")
                         .WithMany("Comments")
                         .HasForeignKey("userid")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -97,7 +97,7 @@ namespace BlazorApp1.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BlazorApp1.Data.User", b =>
+            modelBuilder.Entity("BlazorApp1.Data.UserEntity", b =>
                 {
                     b.Navigation("Comments");
                 });

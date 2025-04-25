@@ -28,16 +28,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Features/Comments/Component/UserCommentsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXMvQ29tbWVudHMvQ29tcG9uZW50L1VzZXJDb21tZW50c1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Features/Users/Component/UsersPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXMvVXNlcnMvQ29tcG9uZW50L1VzZXJzUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Pages/Users.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Pages/Weather.razor]

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DoA4geEHKA0=",
+  "dgSpecHash": "Rffdx4gDpjE=",
   "success": true,
   "projectFilePath": "/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorApp1/BlazorApp1.csproj",
   "expectedPackageFiles": [
+    "/Users/Masha/.nuget/packages/blazored.fluentvalidation/2.2.0/blazored.fluentvalidation.2.2.0.nupkg.sha512",
+    "/Users/Masha/.nuget/packages/fluentvalidation/11.9.1/fluentvalidation.11.9.1.nupkg.sha512",
     "/Users/Masha/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/Masha/.nuget/packages/microsoft.aspnetcore.authorization/9.0.4/microsoft.aspnetcore.authorization.9.0.4.nupkg.sha512",
     "/Users/Masha/.nuget/packages/microsoft.aspnetcore.components/9.0.4/microsoft.aspnetcore.components.9.0.4.nupkg.sha512",
