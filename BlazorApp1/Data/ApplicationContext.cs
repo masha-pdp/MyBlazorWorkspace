@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace BlazorApp1.Data
 {
-    public class ApplicationContextEntity : DbContext
+    public class ApplicationContext : DbContext
     {
-        public DbSet<UserEntity> usersEntity {get;set;}
-        public DbSet<CommentEntity> commentsEntity {get;set;}
-        public DbSet<OperationEntity> OperationEntitiesEntity { get; set; }
+        public DbSet<UserEntity> UserEntities {get;set;}
+        public DbSet<CommentEntity> CommentEntities {get;set;}
+        public DbSet<OperationEntity> OperationEntities { get; set; }
 
 
-        public ApplicationContextEntity()
+        public ApplicationContext()
         {
             
         }

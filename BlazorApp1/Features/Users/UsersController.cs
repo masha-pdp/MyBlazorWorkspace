@@ -12,11 +12,11 @@ namespace BlazorApp1.Features.Users;
 //[Route("[controller]")]
 public class UsersController : ControllerBase
 {
-    private readonly ApplicationContextEntity _contextEntity;
+    private readonly ApplicationContext _context;
 
-    public UsersController(ApplicationContextEntity contextEntity)
+    public UsersController(ApplicationContext context)
     {
-        _contextEntity = contextEntity;
+        _context = context;
     }
     
     
@@ -30,7 +30,7 @@ public class UsersController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetUsers()
     {
-        var users = await _contextEntity.usersEntity
+        var users = await _context.UserEntities
             .AsNoTracking()
             .Include(u => u.Comments)
             .ToListAsync();
@@ -58,7 +58,7 @@ public class UsersController : ControllerBase
     [HttpGet("{userId}/name")]
     public async Task<IActionResult> GetUserName(long userId)
     {
-        var user = await _contextEntity.usersEntity
+        var user = await _context.UserEntities
             .AsNoTracking()
             .FirstOrDefaultAsync(u => u.id == userId);
         if (user == null)

@@ -32,8 +32,4 @@
   <Content Remove="wwwroot/favicon.png" />
 </ItemGroup>
 
-<ItemGroup>
-  <Folder Include="Features\Comments\" />
-</ItemGroup>
-
 </Project>

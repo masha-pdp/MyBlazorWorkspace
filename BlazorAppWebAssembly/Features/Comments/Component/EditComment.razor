@@ -1,0 +1,69 @@
+@page "/comment/{commentId:long}/edit"
+@using BlazorAppWebAssembly.Features.Comments.DTO
+
+<h3>EditComment @_commentDto.id </h3>
+
+@if (_commentDto is not null)
+{
+    <EditForm Model="_commentDto" OnValidSubmit="HandleValidSubmit">
+        <FluentValidationValidator />
+        <ValidationSummary />
+
+        <div class="mb-3">
+            <label for="date">Date:</label>
+            <InputDate id="date" class="form-control" @bind-Value="_commentDto.date" />
+        </div>
+
+        <div class="mb-3">
+            <label for="text">Text:</label>
+            <InputTextArea id="text" class="form-control" @bind-Value="_commentDto.text" />
+            <ValidationMessage For="@(() => _commentDto.text)" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </EditForm>
+
+}
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert alert-success">@message</div>
+}
+else
+{
+    <p>Загрузка комментария...</p>
+}
+
+@code{
+    [Inject] HttpClient _httpClient { get; set; }
+    [Inject] NavigationManager Navigation { get; set; }
+    [Parameter] public long commentId { get; set; } = default!;
+    private CommentDto? _commentDto = new CommentDto();
+    string? message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _commentDto = await _httpClient.GetFromJsonAsync<CommentDto>($"api/comments/by-commentId/{commentId}");
+        if (_commentDto.date == default)
+        {
+            _commentDto.date = DateTime.UtcNow;
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var responce = _httpClient.PutAsJsonAsync("api/Comments/update-comment", _commentDto);
+        var response = await _httpClient.PutAsJsonAsync("api/comments/update-comment", _commentDto);
+        if (response.IsSuccessStatusCode)
+        {
+            message = "Комментарий успешно обновлён!";
+            StateHasChanged();
+            await Task.Delay(2000);
+            Navigation.NavigateTo($"/usercomments/{_commentDto!.userid}", forceLoad: true);
+        }
+        else
+        {
+            var error = await response.Content.ReadAsStringAsync();
+            message = $"Ошибка при обновлении: {error}";
+        }
+    }
+}

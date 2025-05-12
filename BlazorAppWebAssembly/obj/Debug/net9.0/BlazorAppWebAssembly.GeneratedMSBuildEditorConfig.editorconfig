@@ -28,6 +28,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Features/Comments/Component/AddComment.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXMvQ29tbWVudHMvQ29tcG9uZW50L0FkZENvbW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Features/Comments/Component/EditComment.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXMvQ29tbWVudHMvQ29tcG9uZW50L0VkaXRDb21tZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/Features/Comments/Component/UserCommentsPage.razor]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXMvQ29tbWVudHMvQ29tcG9uZW50L1VzZXJDb21tZW50c1BhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace BlazorApp1.Migrations
 {
-    [DbContext(typeof(ApplicationContextEntity))]
+    [DbContext(typeof(ApplicationContext))]
     [Migration("20250423092753_RenameToEntities")]
     partial class RenameToEntities
     {

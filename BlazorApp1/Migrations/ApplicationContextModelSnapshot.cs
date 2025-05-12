@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace BlazorApp1.Migrations
 {
-    [DbContext(typeof(ApplicationContextEntity))]
+    [DbContext(typeof(ApplicationContext))]
     partial class ApplicationContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -44,7 +44,7 @@ namespace BlazorApp1.Migrations
 
                     b.HasIndex("userid");
 
-                    b.ToTable("commentsEntity");
+                    b.ToTable("CommentEntities");
                 });
 
             modelBuilder.Entity("BlazorApp1.Data.OperationEntity", b =>
@@ -64,7 +64,7 @@ namespace BlazorApp1.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("OperationEntitiesEntity");
+                    b.ToTable("OperationEntities");
                 });
 
             modelBuilder.Entity("BlazorApp1.Data.UserEntity", b =>
@@ -83,7 +83,7 @@ namespace BlazorApp1.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("usersEntity");
+                    b.ToTable("UserEntities");
                 });
 
             modelBuilder.Entity("BlazorApp1.Data.CommentEntity", b =>

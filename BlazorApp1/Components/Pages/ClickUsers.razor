@@ -22,14 +22,14 @@
 
 @code {
     private int currentCount = 0;
-    [Inject] ApplicationContextEntity db { get; set; }
+    [Inject] ApplicationContext db { get; set; }
 
     List<UserEntity> users;
     
     
     protected override async Task OnInitializedAsync()
     {
-        users = await db.usersEntity.ToListAsync();
+        users = await db.UserEntities.ToListAsync();
     }
 
     private void NextUser()

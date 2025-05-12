@@ -1,61 +1,98 @@
 using BlazorApp1.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using BlazorAppWebAssembly.Features.Comments.DTO;
+using BlazorAppWebAssembly.Features.Comments.Validators;
 
 namespace BlazorApp1.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 public class CommentsController : ControllerBase
 {
-    private readonly ApplicationContextEntity _contextEntity;
+    private readonly ApplicationContext _context;
 
-    public CommentsController(ApplicationContextEntity contextEntity)
+    public CommentsController(ApplicationContext context)
     {
-        _contextEntity = contextEntity;
+        _context = context;
     }
     
     
     // GET
-    [HttpGet]
+    [HttpGet("by-userId/{userId:long}")]
     public async Task<IActionResult> GetComments(long userId)
     {
-        var comments = await _contextEntity.commentsEntity.Where(c => c.userid == userId)
+        var comments = await _context.CommentEntities.Where(c => c.userid == userId)
                                                             .ToListAsync();
         
         return Ok(comments);
     }
     
-    [HttpPost]
-    public async Task<IActionResult> AddComment(long userId, string commentText)
+    [HttpGet("by-commentId/{commentId:long}")]
+    public async Task<IActionResult> GetComment(long commentId)
     {
-        var comment = new CommentEntity()
-        {
-            userid = userId,
-            text = commentText,
-            date = DateTime.UtcNow
-        };
-        _contextEntity.commentsEntity.Add(comment);
-        await _contextEntity.SaveChangesAsync();
-        return Ok();
+        var comment = await _context.CommentEntities.FirstOrDefaultAsync(c => c.id == commentId);
+        
+        return Ok(comment);
     }
     
-    [HttpPut("{commentId}")] 
-    public async Task <IActionResult> UpdateComment([FromForm]long commentId, [FromForm]string commentText)
+    
+    
+    
+    [HttpPost]
+    public async Task<IActionResult> AddComment([FromBody] CommentDto commentDto)
     {
-        var comment = await _contextEntity.commentsEntity.FindAsync(commentId);
+        var validationResult = new CommentDtoValidator().Validate(commentDto);
+        if (!validationResult.IsValid)
+        {
+            return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+        }
+        
+        var res = await _context.UserEntities.AnyAsync(u => u.id == commentDto.userid);
+        if (!res)
+        {
+            return BadRequest("User ID is not found.");
+        }
+        
+        var comment = new CommentEntity()
+        {
+            userid = commentDto.userid,
+            text = commentDto.text,
+            date = commentDto.date
+        };
+    
+        _context.CommentEntities.Add(comment);
+        await _context.SaveChangesAsync();
+
+        return Ok();
+    }
+
+    
+    [HttpPut("update-comment")] 
+    public async Task <IActionResult> UpdateComment([FromBody] CommentDto commentDto)
+    {
+        var comment = await _context.CommentEntities.FindAsync(commentDto.id);
         if (comment == null) return NotFound();
-        comment.text = commentText;
-        await _contextEntity.SaveChangesAsync();
+        comment.text = commentDto.text;
+        comment.date = commentDto.date;
+        await _context.SaveChangesAsync();
         return Ok();
     }
 
     [HttpDelete("{commentId}")]
     public async Task <IActionResult> DeleteComment(long commentId)
     {
-        var comment = await _contextEntity.commentsEntity.FindAsync(commentId);
-        if (comment == null) return NotFound();
-        _contextEntity.commentsEntity.Remove(comment);
-        await _contextEntity.SaveChangesAsync();
+        // var comment = await _context.CommentEntities.FindAsync(commentId);
+        // if (comment == null) return NotFound();
+        // _context.CommentEntities.Remove(comment);
+        // await _context.SaveChangesAsync();
+        
+        int deletedCount = await _context.CommentEntities
+            .Where(c => c.id == commentId)
+            .ExecuteDeleteAsync();
+        
+        if (deletedCount == 0)
+            return NotFound();
+        
         return Ok();
     }
 }

@@ -530,3 +530,5 @@
 /Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorApp1/bin/Debug/net9.0/Microsoft.JSInterop.WebAssembly.dll
 /Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorApp1/bin/Debug/net9.0/BlazorAppWebAssembly.dll
 /Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorApp1/bin/Debug/net9.0/BlazorAppWebAssembly.pdb
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorApp1/bin/Debug/net9.0/Blazored.FluentValidation.dll
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorApp1/bin/Debug/net9.0/FluentValidation.dll

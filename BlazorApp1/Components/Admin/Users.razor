@@ -15,14 +15,14 @@
     //  переменные и свойства странички
     
     //  [Inject] - это зависимости из DI-контейнера
-    [Inject] ApplicationContextEntity db { get; set; }
+    [Inject] ApplicationContext db { get; set; }
 
     List<UserEntity> users;
 
     protected override void OnInitialized()
     {
         //  провести инциализаицю полей можно тут
-        users = db.usersEntity.ToList();  //.Select(u => u).ToList();
+        users = db.UserEntities.ToList();  //.Select(u => u).ToList();
     }
     
 }
