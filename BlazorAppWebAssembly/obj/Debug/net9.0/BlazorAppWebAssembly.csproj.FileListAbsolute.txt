@@ -2168,10 +2168,10 @@
 /Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/webcil/FluentValidation.wasm
 /Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/k2sbue6gau-x0xsecpmtx.gz
 /Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/9o0ub4hcm5-a26tmul8eq.gz
-/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.pe9nkgx8la.pdb
-/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.7wj273bbik.wasm
-/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.7wj273bbik.wasm.gz
-/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.pe9nkgx8la.pdb.gz
-/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/12c6t64q4e-7wj273bbik.gz
-/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/3uujwyl8h0-pe9nkgx8la.gz
-/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/yu3z5f2smg-55g24avdsm.gz
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.t74io1x2p6.pdb
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.e1s1nyasz9.wasm
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.e1s1nyasz9.wasm.gz
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/bin/Debug/net9.0/wwwroot/_framework/BlazorAppWebAssembly.t74io1x2p6.pdb.gz
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/12c6t64q4e-e1s1nyasz9.gz
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/3uujwyl8h0-t74io1x2p6.gz
+/Users/Masha/RiderProjects/MyBlazorWorkspace/BlazorAppWebAssembly/obj/Debug/net9.0/compressed/yu3z5f2smg-ll11kdj97p.gz
